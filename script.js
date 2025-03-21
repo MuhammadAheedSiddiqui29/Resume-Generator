@@ -11,3 +11,17 @@ function addNewWEField() {
 
     weOb.insertBefore(newNode, weAddButtonOb);
 }
+
+function addNewAQField() {
+    let newNode = document.createElement("textarea");
+    newNode.classList.add("form-control");
+    newNode.classList.add("eqField");
+    newNode.classList.add("mt-2");
+    newNode.setAttribute("rows", 3);
+    newNode.setAttribute("placeholder", "Enter Here");
+
+    let aqOb = document.getElementById("aq");
+    let aqAddButtonOb = document.getElementById("aqAddButton");
+
+    aqOb.insertBefore(newNode, aqAddButtonOb);
+}
