@@ -106,4 +106,15 @@ function generateCV() {
     }
 
     document.getElementById("aqT").innerHTML = str2;
+
+                                        // HIDE SHOW FUNCTIONALITY
+                                        
+    document.getElementById("cv-form").style.display = "none";
+    document.getElementById("cv-template").style.display = "block";
+}
+
+                                        // PRINT CV
+
+function printCV() {
+    window.print();
 }
