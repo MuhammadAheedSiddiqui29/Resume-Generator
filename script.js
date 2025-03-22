@@ -1,3 +1,5 @@
+                                        // WORK EXPERIENCE FIELD
+
 function addNewWEField() {
     let newNode = document.createElement("textarea");
     newNode.classList.add("form-control");
@@ -12,6 +14,8 @@ function addNewWEField() {
     weOb.insertBefore(newNode, weAddButtonOb);
 }
 
+                                        // ACADEMIC QUALIFICATION FIELD
+
 function addNewAQField() {
     let newNode = document.createElement("textarea");
     newNode.classList.add("form-control");
@@ -25,3 +29,5 @@ function addNewAQField() {
 
     aqOb.insertBefore(newNode, aqAddButtonOb);
 }
+
+
