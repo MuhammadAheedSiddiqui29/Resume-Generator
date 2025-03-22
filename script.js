@@ -83,6 +83,7 @@ function generateCV() {
     let objectiveT = document.getElementById("objectiveT");
 
     objectiveT.innerHTML = objectiveField;
+    objectiveT.style.color = "#4f4f4f";
 
                                         // WORK EXPERIENCE FUNCTIONALITY
 
