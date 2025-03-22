@@ -107,6 +107,17 @@ function generateCV() {
 
     document.getElementById("aqT").innerHTML = str2;
 
+                                        // IMAGE FUNCTIONALITY
+
+    let file = document.getElementById("imgField").files[0];
+    
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+
+    reader.onloadend = function() {
+        document.getElementById("imgT").src = reader.result;
+    }
+    
                                         // HIDE SHOW FUNCTIONALITY
                                         
     document.getElementById("cv-form").style.display = "none";
@@ -118,3 +129,4 @@ function generateCV() {
 function printCV() {
     window.print();
 }
+
