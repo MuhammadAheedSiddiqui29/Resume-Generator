@@ -46,12 +46,12 @@
 
                 <div class="form-group mt-2">
                     <label for="igField">Instagram</label>
-                    <input type="text" class="form-control" id="igField" placeholder="Enter Here">
+                    <input type="text" class="form-control" id="instaField" placeholder="Enter Here">
                 </div>
 
                 <div class="form-group mt-2">
                     <label for="linkedInField">LinkedIn</label>
-                    <input type="text" class="form-control" id="linkedInField" placeholder="Enter Here">
+                    <input type="text" class="form-control" id="linkedField" placeholder="Enter Here">
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
 
                 <div class="form-group mt-2">
                     <label for="">Objective</label>
-                    <textarea class="form-control" placeholder="Enter Here" rows="5"></textarea>
+                    <textarea class="form-control" placeholder="Enter Here" rows="5" id="objectiveField"></textarea>
                 </div>
 
                                         <!-- WORK EXPERIENCE -->
@@ -96,7 +96,7 @@
                                         <!-- GENERATE BUTTON -->
 
         <div class="container text-center mt-3">
-            <button class="btn btn-primary btn-lg">Generate CV</button>
+            <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
         </div>
     </div>
     
@@ -111,20 +111,20 @@
                 <img src="images/person.svg" class="img-fluid myimg">
 
                 <div class="container">
-                    <p>MAS</p>
-                    <p>+923443185675</p>
-                    <p>123/123 Sector MAS, INDIA</p>
+                    <p id="nameT1">MAS</p>
+                    <p id="contactT">+923443185675</p>
+                    <p id="addressT">123/123 Sector MAS, INDIA</p>
                     <hr>
-                    <p><a href="#1">https://www.facebook.com/</a></p>
-                    <p><a href="#1">https://www.instagram.com/</a></p>
-                    <p><a href="#1">https://api.linkedin.com/login</a></p>
+                    <p><a id="fbT" href="#1">https://www.facebook.com/</a></p>
+                    <p><a id="instaT" href="#1">https://www.instagram.com/</a></p>
+                    <p><a id="linkedT" href="#1">https://api.linkedin.com/login</a></p>
                 </div>
             </div>
 
                                         <!-- SECOND COLUMN -->
 
             <div class="col-md-8 py-5">
-                <h1 class="text-center" style="font-weight: 980;">MAS</h1>
+                <h1 id="nameT2" class="text-center" style="font-weight: 980;">MAS</h1>
 
                                         <!-- OBJECTIVE CARD -->
 
@@ -139,7 +139,7 @@
                                         <!-- OBJECTIVE CARD BODY -->
 
                     <div class="card-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus saepe, perspiciatis veniam asperiores ipsum repellendus a velit ducimus eveniet nihil in sit culpa consequuntur ipsa vel at est nesciunt sapiente tenetur cupiditate inventore? Recusandae, quod, excepturi porro doloribus illo, reprehenderit esse eum sed veniam distinctio quasi. Alias eaque ad voluptatem.</p>
+                        <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus saepe, perspiciatis veniam asperiores ipsum repellendus a velit ducimus eveniet nihil in sit culpa consequuntur ipsa vel at est nesciunt sapiente tenetur cupiditate inventore? Recusandae, quod, excepturi porro doloribus illo, reprehenderit esse eum sed veniam distinctio quasi. Alias eaque ad voluptatem.</p>
                     </div>
                 </div>
 
@@ -156,7 +156,7 @@
                                         <!-- WORK EXPERIENCE CARD BODY -->
 
                     <div class="card-body">
-                        <ul>
+                        <ul id="weT">
                             <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quisquam.</li>
                             <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quisquam.</li>
                             <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quisquam.</li>
@@ -177,7 +177,7 @@
                                         <!-- ACADEMIC QUALIFICATION CARD BODY -->
 
                     <div class="card-body">
-                        <ul>
+                        <ul id="aqT">
                             <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quisquam.</li>
                             <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quisquam.</li>
                             <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quisquam.</li>
@@ -188,7 +188,7 @@
                                         <!-- PRINT CV BUTTON -->
 
                 <div class="container mt-3 text-center">
-                    <button class="btn background" style="background-color: aqua;">Print CV</button>
+                    <button onclick="printCV()" class="btn background" style="background-color: aqua;">Print CV</button>
                 </div>
 
 
