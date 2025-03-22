@@ -3,15 +3,32 @@
 }
 
 #cv-template{
-    display: none;
+    /* display: none; */
 }
 
-.myimg{
-    border: 1px solid red;
+                                        /* CV TEMPLATE */
+
+.first-column{
+    color: #afafaf;
+    background-color: #163853;
+}
+
+.first-column img{
+    border: 5px solid white;
     border-radius: 50%;
     width: 200px;
+    height: 250px;
 }
 
-.background{
-    background-color: aqua;
+.first-column a{
+    color: #afafaf;
 }
+
+.second-column h1{
+    color: #4f4f4f;
+}
+
+.second-column h3{
+    color: white;
+}
+
