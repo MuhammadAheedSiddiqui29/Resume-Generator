@@ -32,3 +32,16 @@
     color: white;
 }
 
+@media print {
+    .card-header {
+        background-color: #163853 !important;
+        -webkit-print-color-adjust: exact;
+        color: white !important;
+    }
+    .second-column h3 {
+        color: white !important;
+    }
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+}
